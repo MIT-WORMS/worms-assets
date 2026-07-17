@@ -7,7 +7,7 @@
 <!-- |      namespace: namespace to ensure uniqueness of names                         | -->
 <!-- |      parent_link: link name to affix the uib of this module to                  | -->
 <!-- =================================================================================== -->
-<xacro:macro name="rubber_foot" params="namespace parent_link">
+<xacro:macro name="rubber_foot" params="namespace parent_link mesh_type">
 
     <joint name="${namespace}_rubber_foot_joint_fixed" type="fixed">
         <parent link="${parent_link}"/>
@@ -23,7 +23,7 @@
         
         <visual>
             <geometry>
-                <mesh filename="../Meshes/rubber-foot.gltf"/>
+                <mesh filename="../Meshes/${mesh_type}/rubber-foot.gltf"/>
             </geometry>
         </visual>
 

@@ -13,7 +13,7 @@
 <!-- |    Args:                                                                        | -->
 <!-- |      spawn_z: height (in m) to spawn the pallet at                              | -->
 <!-- =================================================================================== -->
-<xacro:macro name="turtle" params="spawn_z">
+<xacro:macro name="turtle" params="spawn_z mesh_type">
 
     <!-- Virtual link to offset the body by some fixed amount -->
     <link name="virtual_turtle_body"/>
@@ -34,7 +34,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 -1.57"/>
             <geometry>
-                <mesh filename="../Meshes/turtle-pallet.gltf"/>
+                <mesh filename="../Meshes/${mesh_type}/turtle-pallet.gltf"/>
             </geometry>
         </visual>
 

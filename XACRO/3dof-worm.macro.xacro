@@ -11,7 +11,7 @@
 <!-- |      base_xyz: translational offset of uib, ex: "0.2 0.1 0.1"                   | -->
 <!-- |      base_rpy: rotational offset of uib, "0.2 0.1 0.1"                          | -->
 <!-- =================================================================================== -->
-<xacro:macro name="worm" params="namespace parent_link base_xyz base_rpy">
+<xacro:macro name="worm" params="namespace parent_link base_xyz base_rpy mesh_type">
 
     <!-- Local parameters -->
     <xacro:property name="motor_collision_length" value="0.075"/>
@@ -45,7 +45,7 @@
         <visual>
             <origin xyz="0 0 0.045" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="../Meshes/link-0.gltf"/>
+                <mesh filename="../Meshes/${mesh_type}/link-0.gltf"/>
             </geometry>
         </visual>
 
@@ -83,7 +83,7 @@
         <visual>
             <origin xyz="0.05 0 0" rpy="0 0 -1.57"/>
             <geometry>
-                <mesh filename="../Meshes/link-1.gltf"/>
+                <mesh filename="../Meshes/${mesh_type}/link-1.gltf"/>
             </geometry>
         </visual>
 
@@ -121,7 +121,7 @@
         <visual>
             <origin xyz="0 -0.05 0" rpy="0 0 3.14"/>
             <geometry>
-                <mesh filename="../Meshes/link-2.gltf"/>
+                <mesh filename="../Meshes/${mesh_type}/link-2.gltf"/>
             </geometry>
         </visual>
 
@@ -159,7 +159,7 @@
         <visual>
             <origin xyz="0 -0.05 0" rpy="0 0 1.57"/>
             <geometry>
-                <mesh filename="../Meshes/link-3.gltf"/>
+                <mesh filename="../Meshes/${mesh_type}/link-3.gltf"/>
             </geometry>
         </visual>
 

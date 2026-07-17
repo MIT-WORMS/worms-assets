@@ -21,7 +21,7 @@
     <visual>
       <origin rpy="0 0 -1.57" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="../Meshes/turtle-pallet.gltf"/>
+        <mesh filename="../Meshes/GLTF/turtle-pallet.gltf"/>
       </geometry>
     </visual>
     <collision name="turtle_top_collision">
@@ -100,7 +100,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.045"/>
       <geometry>
-        <mesh filename="../Meshes/link-0.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-0.gltf"/>
       </geometry>
     </visual>
     <collision name="duck_link_0_base_collision">
@@ -133,7 +133,7 @@
     <visual>
       <origin rpy="0 0 -1.57" xyz="0.05 0 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-1.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-1.gltf"/>
       </geometry>
     </visual>
     <collision name="duck_link_1_base_collision">
@@ -166,7 +166,7 @@
     <visual>
       <origin rpy="0 0 3.14" xyz="0 -0.05 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-2.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-2.gltf"/>
       </geometry>
     </visual>
     <collision name="duck_link_2_base_collision">
@@ -199,7 +199,7 @@
     <visual>
       <origin rpy="0 0 1.57" xyz="0 -0.05 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-3.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-3.gltf"/>
       </geometry>
     </visual>
     <collision name="duck_link_3_base_collision">
@@ -275,7 +275,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.045"/>
       <geometry>
-        <mesh filename="../Meshes/link-0.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-0.gltf"/>
       </geometry>
     </visual>
     <collision name="frog_link_0_base_collision">
@@ -308,7 +308,7 @@
     <visual>
       <origin rpy="0 0 -1.57" xyz="0.05 0 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-1.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-1.gltf"/>
       </geometry>
     </visual>
     <collision name="frog_link_1_base_collision">
@@ -341,7 +341,7 @@
     <visual>
       <origin rpy="0 0 3.14" xyz="0 -0.05 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-2.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-2.gltf"/>
       </geometry>
     </visual>
     <collision name="frog_link_2_base_collision">
@@ -374,7 +374,7 @@
     <visual>
       <origin rpy="0 0 1.57" xyz="0 -0.05 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-3.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-3.gltf"/>
       </geometry>
     </visual>
     <collision name="frog_link_3_base_collision">
@@ -450,7 +450,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.045"/>
       <geometry>
-        <mesh filename="../Meshes/link-0.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-0.gltf"/>
       </geometry>
     </visual>
     <collision name="lion_link_0_base_collision">
@@ -483,7 +483,7 @@
     <visual>
       <origin rpy="0 0 -1.57" xyz="0.05 0 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-1.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-1.gltf"/>
       </geometry>
     </visual>
     <collision name="lion_link_1_base_collision">
@@ -516,7 +516,7 @@
     <visual>
       <origin rpy="0 0 3.14" xyz="0 -0.05 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-2.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-2.gltf"/>
       </geometry>
     </visual>
     <collision name="lion_link_2_base_collision">
@@ -549,7 +549,7 @@
     <visual>
       <origin rpy="0 0 1.57" xyz="0 -0.05 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-3.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-3.gltf"/>
       </geometry>
     </visual>
     <collision name="lion_link_3_base_collision">
@@ -625,7 +625,7 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.045"/>
       <geometry>
-        <mesh filename="../Meshes/link-0.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-0.gltf"/>
       </geometry>
     </visual>
     <collision name="pony_link_0_base_collision">
@@ -658,7 +658,7 @@
     <visual>
       <origin rpy="0 0 -1.57" xyz="0.05 0 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-1.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-1.gltf"/>
       </geometry>
     </visual>
     <collision name="pony_link_1_base_collision">
@@ -691,7 +691,7 @@
     <visual>
       <origin rpy="0 0 3.14" xyz="0 -0.05 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-2.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-2.gltf"/>
       </geometry>
     </visual>
     <collision name="pony_link_2_base_collision">
@@ -724,7 +724,7 @@
     <visual>
       <origin rpy="0 0 1.57" xyz="0 -0.05 0"/>
       <geometry>
-        <mesh filename="../Meshes/link-3.gltf"/>
+        <mesh filename="../Meshes/GLTF/link-3.gltf"/>
       </geometry>
     </visual>
     <collision name="pony_link_3_base_collision">
@@ -793,7 +793,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../Meshes/rubber-foot.gltf"/>
+        <mesh filename="../Meshes/GLTF/rubber-foot.gltf"/>
       </geometry>
     </visual>
     <collision name="duck_rubber_foot_uib_collision">
@@ -821,7 +821,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../Meshes/rubber-foot.gltf"/>
+        <mesh filename="../Meshes/GLTF/rubber-foot.gltf"/>
       </geometry>
     </visual>
     <collision name="frog_rubber_foot_uib_collision">
@@ -849,7 +849,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../Meshes/rubber-foot.gltf"/>
+        <mesh filename="../Meshes/GLTF/rubber-foot.gltf"/>
       </geometry>
     </visual>
     <collision name="lion_rubber_foot_uib_collision">
@@ -877,7 +877,7 @@
     </inertial>
     <visual>
       <geometry>
-        <mesh filename="../Meshes/rubber-foot.gltf"/>
+        <mesh filename="../Meshes/GLTF/rubber-foot.gltf"/>
       </geometry>
     </visual>
     <collision name="pony_rubber_foot_uib_collision">
