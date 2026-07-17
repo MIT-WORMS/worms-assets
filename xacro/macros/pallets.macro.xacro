@@ -12,7 +12,7 @@
 <!-- |      back_center_uib                                                            | -->
 <!-- |    Args:                                                                        | -->
 <!-- |      spawn_z: height (in m) to spawn the pallet at                              | -->
-<!-- |      mesh_type: type of mesh to link against, GLTF or OBJ                       | -->
+<!-- |      mesh_type: type of mesh to link against, gltf or obj                       | -->
 <!-- =================================================================================== -->
 <xacro:macro name="turtle" params="spawn_z mesh_type">
 
@@ -35,7 +35,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 -1.57"/>
             <geometry>
-                <mesh filename="../Meshes/${mesh_type}/turtle-pallet.gltf"/>
+                <mesh filename="../meshes/${mesh_type}/turtle-pallet.gltf"/>
             </geometry>
         </visual>
 
@@ -119,7 +119,7 @@
 <!-- |      back_right_uib                                                             | -->
 <!-- |    Args:                                                                        | -->
 <!-- |      spawn_z: height (in m) to spawn the pallet at                              | -->
-<!-- |      mesh_type: type of mesh to link against, GLTF or OBJ                       | -->
+<!-- |      mesh_type: type of mesh to link against, gltf or obj                       | -->
 <!-- =================================================================================== -->
 <xacro:macro name="hexapod" params="spawn_z mesh_type">
 
@@ -142,7 +142,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 -1.57"/>
             <geometry>
-                <mesh filename="../Meshes/${mesh_type}/hexapod-pallet.gltf"/>
+                <mesh filename="../meshes/${mesh_type}/hexapod-pallet.gltf"/>
             </geometry>
         </visual>
 

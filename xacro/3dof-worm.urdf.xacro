@@ -3,14 +3,14 @@
 
 <!-- Arguments -->
 <xacro:arg name="name" default=""/>
-<xacro:arg name="mesh_type" default="GLTF"/>
+<xacro:arg name="mesh_type" default="gltf"/>
 
 <xacro:if value="$(eval name == '')">
     <xacro:error msg="'name' was not provided"/>
 </xacro:if>
 
 <!-- Include xacro files -->
-<xacro:include filename="MACRO/3dof-worm.macro.xacro"/>
+<xacro:include filename="macros/3dof-worm.macro.xacro"/>
 
 <!-- Create a default worm fixed at the origin with the name passed -->
 <xacro:worm namespace="$(eval name)" parent_link="world" base_xyz="0 0 0" base_rpy="0 0 0" mesh_type="$(eval mesh_type)"/>

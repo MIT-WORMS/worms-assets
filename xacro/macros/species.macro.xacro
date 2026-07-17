@@ -6,7 +6,7 @@
 <!-- |    Args:                                                                        | -->
 <!-- |      namespace: namespace to ensure uniqueness of names                         | -->
 <!-- |      parent_link: link name to affix the uib of this module to                  | -->
-<!-- |      mesh_type: type of mesh to link against, GLTF or OBJ                       | -->
+<!-- |      mesh_type: type of mesh to link against, gltf or obj                       | -->
 <!-- =================================================================================== -->
 <xacro:macro name="rubber_foot" params="namespace parent_link mesh_type">
 
@@ -24,7 +24,7 @@
         
         <visual>
             <geometry>
-                <mesh filename="../Meshes/${mesh_type}/rubber-foot.gltf"/>
+                <mesh filename="../meshes/${mesh_type}/rubber-foot.gltf"/>
             </geometry>
         </visual>
 

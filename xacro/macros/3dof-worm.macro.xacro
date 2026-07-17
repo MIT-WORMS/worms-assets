@@ -10,7 +10,7 @@
 <!-- |      parent_link: link name to affix the uib of this worm to                    | -->
 <!-- |      base_xyz: translational offset of uib, ex: "0.2 0.1 0.1"                   | -->
 <!-- |      base_rpy: rotational offset of uib, "0.2 0.1 0.1"                          | -->
-<!-- |      mesh_type: type of mesh to link against, GLTF or OBJ                       | -->
+<!-- |      mesh_type: type of mesh to link against, gltf or obj                       | -->
 <!-- =================================================================================== -->
 <xacro:macro name="worm" params="namespace parent_link base_xyz base_rpy mesh_type">
 
@@ -46,7 +46,7 @@
         <visual>
             <origin xyz="0 0 0.045" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="../Meshes/${mesh_type}/link-0.gltf"/>
+                <mesh filename="../meshes/${mesh_type}/link-0.gltf"/>
             </geometry>
         </visual>
 
@@ -84,7 +84,7 @@
         <visual>
             <origin xyz="0.05 0 0" rpy="0 0 -1.57"/>
             <geometry>
-                <mesh filename="../Meshes/${mesh_type}/link-1.gltf"/>
+                <mesh filename="../meshes/${mesh_type}/link-1.gltf"/>
             </geometry>
         </visual>
 
@@ -122,7 +122,7 @@
         <visual>
             <origin xyz="0 -0.05 0" rpy="0 0 3.14"/>
             <geometry>
-                <mesh filename="../Meshes/${mesh_type}/link-2.gltf"/>
+                <mesh filename="../meshes/${mesh_type}/link-2.gltf"/>
             </geometry>
         </visual>
 
@@ -160,7 +160,7 @@
         <visual>
             <origin xyz="0 -0.05 0" rpy="0 0 1.57"/>
             <geometry>
-                <mesh filename="../Meshes/${mesh_type}/link-3.gltf"/>
+                <mesh filename="../meshes/${mesh_type}/link-3.gltf"/>
             </geometry>
         </visual>
 

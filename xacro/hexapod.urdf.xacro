@@ -8,12 +8,12 @@
 <xacro:arg name="middle_right" default="hare"/>
 <xacro:arg name="back_left" default="lion"/>
 <xacro:arg name="back_right" default="pony"/>
-<xacro:arg name="mesh_type" default="GLTF"/>
+<xacro:arg name="mesh_type" default="gltf"/>
 
 <!-- Include xacro files -->
-<xacro:include filename="MACRO/3dof-worm.macro.xacro"/>
-<xacro:include filename="MACRO/pallets.macro.xacro"/>
-<xacro:include filename="MACRO/species.macro.xacro"/>
+<xacro:include filename="macros/3dof-worm.macro.xacro"/>
+<xacro:include filename="macros/pallets.macro.xacro"/>
+<xacro:include filename="macros/species.macro.xacro"/>
 
 <!-- Create a hexapod pallet and attach worms to each corner uib -->
 <xacro:hexapod spawn_z="1.35" mesh_type="$(eval mesh_type)"/>
