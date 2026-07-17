@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<robot name="hexapod" xmlns:drake="http://drake.mit.edu" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<!-- Arguments -->
+<xacro:arg name="front_left" default="duck"/>
+<xacro:arg name="front_right" default="frog"/>
+<xacro:arg name="middle_left" default="seal"/>
+<xacro:arg name="middle_right" default="hare"/>
+<xacro:arg name="back_left" default="lion"/>
+<xacro:arg name="back_right" default="pony"/>
+<xacro:arg name="mesh_type" default="GLTF"/>
+
+<!-- Include xacro files -->
+<xacro:include filename="MACRO/3dof-worm.macro.xacro"/>
+<xacro:include filename="MACRO/pallets.macro.xacro"/>
+<xacro:include filename="MACRO/species.macro.xacro"/>
+
+<!-- Create a hexapod pallet and attach worms to each corner uib -->
+<xacro:hexapod spawn_z="1.35" mesh_type="$(eval mesh_type)"/>
+<xacro:worm namespace="$(eval front_left)" parent_link="front_left_uib" base_xyz="0 0 0" base_rpy="0 0 0" mesh_type="$(eval mesh_type)"/>
+<xacro:worm namespace="$(eval front_right)" parent_link="front_right_uib" base_xyz="0 0 0" base_rpy="0 0 0" mesh_type="$(eval mesh_type)"/>
+<xacro:worm namespace="$(eval middle_left)" parent_link="middle_left_uib" base_xyz="0 0 0" base_rpy="0 0 0" mesh_type="$(eval mesh_type)"/>
+<xacro:worm namespace="$(eval middle_right)" parent_link="middle_right_uib" base_xyz="0 0 0" base_rpy="0 0 0" mesh_type="$(eval mesh_type)"/>
+<xacro:worm namespace="$(eval back_left)" parent_link="back_left_uib" base_xyz="0 0 0" base_rpy="0 0 0" mesh_type="$(eval mesh_type)"/>
+<xacro:worm namespace="$(eval back_right)" parent_link="back_right_uib" base_xyz="0 0 0" base_rpy="0 0 0" mesh_type="$(eval mesh_type)"/>
+
+<!-- Attach a foot module to each worm -->
+<xacro:rubber_foot namespace="$(eval front_left)" parent_link="$(eval front_left)_end_uib" mesh_type="$(eval mesh_type)"/>
+<xacro:rubber_foot namespace="$(eval front_right)" parent_link="$(eval front_right)_end_uib" mesh_type="$(eval mesh_type)"/>
+<xacro:rubber_foot namespace="$(eval middle_left)" parent_link="$(eval middle_left)_end_uib" mesh_type="$(eval mesh_type)"/>
+<xacro:rubber_foot namespace="$(eval middle_right)" parent_link="$(eval middle_right)_end_uib" mesh_type="$(eval mesh_type)"/>
+<xacro:rubber_foot namespace="$(eval back_left)" parent_link="$(eval back_left)_end_uib" mesh_type="$(eval mesh_type)"/>
+<xacro:rubber_foot namespace="$(eval back_right)" parent_link="$(eval back_right)_end_uib" mesh_type="$(eval mesh_type)"/>
+
+</robot>
