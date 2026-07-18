@@ -29,7 +29,7 @@
         <inertial>
             <origin xyz="0 0 -0.13" rpy="0 0 -1.57"/>
             <mass value="21.89"/>
-            <inertia ixx="0.9" ixy="0" ixz="0" iyy="1.5" iyz="0" izz="1.0"/>
+            <inertia ixx="1.5" ixy="0" ixz="0" iyy="0.9" iyz="0" izz="1.0"/>
         </inertial>
 
         <visual>
@@ -134,9 +134,9 @@
     <!-- Main pallet -->
     <link name="hexapod_body">
         <inertial>
-            <origin xyz="0 0 -0.13" rpy="0 0 -1.57"/>
-            <mass value="11.16"/>
-            <inertia ixx="1.65" ixy="0" ixz="0" iyy="0.78" iyz="0" izz="2.36"/>
+        <origin rpy="0 0 -1.57" xyz="0 0 -0.064"/>
+        <mass value="11.144"/>
+        <inertia ixx="1.654" ixy="0" ixz="0" iyy="0.779" iyz="0" izz="2.362"/>
         </inertial>
 
         <visual>
@@ -146,11 +146,32 @@
             </geometry>
         </visual>
 
-        <collision name="turtle_top_collision">
-            <origin xyz="0 0 0.062" rpy="0 0 0"/>
+        <collision name="hexapod_front_left_collision">
+            <origin rpy="0 0 0.959931" xyz="0.2 0.1 -0.064"/>
             <geometry>
-                <box size="0.8 0.4 0.15"/>
-            </geometry>            
+                <box size="0.5 0.7 0.15"/>
+            </geometry>
+        </collision>
+
+        <collision name="hexapod_front_right_collision">
+            <origin rpy="0 0 -0.959931" xyz="0.2 -0.1 -0.064"/>
+            <geometry>
+                <box size="0.5 0.7 0.15"/>
+            </geometry>
+        </collision>
+
+        <collision name="hexapod_back_left_collision">
+            <origin rpy="0 0 -0.959931" xyz="-0.2 0.1 -0.064"/>
+            <geometry>
+                <box size="0.5 0.7 0.15"/>
+            </geometry>
+        </collision>
+
+        <collision name="hexapod_back_right_collision">
+            <origin rpy="0 0 0.959931" xyz="-0.2 -0.1 -0.064"/>
+            <geometry>
+                <box size="0.5 0.7 0.15"/>
+            </geometry>
         </collision>
     </link>
 
@@ -158,14 +179,14 @@
     <joint name="front_left_uib_joint_fixed" type="fixed">
         <parent link="hexapod_body"/>
         <child link="front_left_uib"/>
-        <origin xyz="0.328 0.204 0.062" rpy="-1.57 1.57 0"/>
+        <origin xyz="0.6 0.086 -0.064" rpy="-1.57 1.57 0"/>
     </joint>
     <link name="front_left_uib"/>
 
     <joint name="front_right_uib_joint_fixed" type="fixed">
         <parent link="hexapod_body"/>
         <child link="front_right_uib"/>
-        <origin xyz="0.328 -0.204 0.062" rpy="1.57 -1.57 0"/>
+        <origin xyz="0.6 -0.086 -0.064" rpy="1.57 -1.57 0"/>
     </joint>
     <link name="front_right_uib"/>
 
@@ -174,14 +195,14 @@
     <joint name="middle_left_uib_joint_fixed" type="fixed">
         <parent link="hexapod_body"/>
         <child link="middle_left_uib"/>
-        <origin xyz="0.395 0 0.062" rpy="0 -1.57 3.14"/>
+        <origin xyz="0 0.5 -0.064" rpy="-1.57 1.57 0"/>
     </joint>
     <link name="middle_left_uib"/>
 
     <joint name="middle_right_uib_joint_fixed" type="fixed">
         <parent link="hexapod_body"/>
         <child link="middle_right_uib"/>
-        <origin xyz="-0.395 0 0.062" rpy="0 -1.57 0"/>
+        <origin xyz="0 -0.5 -0.064" rpy="1.57 -1.57 0"/>
     </joint>
     <link name="middle_right_uib"/>
 
@@ -189,14 +210,14 @@
     <joint name="back_left_uib_joint_fixed" type="fixed">
         <parent link="hexapod_body"/>
         <child link="back_left_uib"/>
-        <origin xyz="-0.328 0.204 0.062" rpy="-1.57 1.57 0"/>
+        <origin xyz="-0.6 0.086 -0.064" rpy="-1.57 1.57 0"/>
     </joint>
     <link name="back_left_uib"/>
 
     <joint name="back_right_uib_joint_fixed" type="fixed">
         <parent link="hexapod_body"/>
         <child link="back_right_uib"/>
-        <origin xyz="-0.328 -0.204 0.062" rpy="1.57 -1.57 0"/>
+        <origin xyz="-0.6 -0.086 -0.064" rpy="1.57 -1.57 0"/>
     </joint>
     <link name="back_right_uib"/>
 
